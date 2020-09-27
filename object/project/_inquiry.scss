@@ -1,0 +1,63 @@
+.p-inquiry {
+    h2 {
+        text-align: center;
+        padding-top: 60px;
+        font-size: 4.3rem;
+        color: #301F1B;
+        font-family: 'Hind', sans-serif;
+    }
+    &__contact-form {
+        margin-top: 24px;
+        padding: 30px;
+        background-color: rgba(255, 255, 255, .29);
+        p {
+            font-size: 1.8rem;
+            line-height: 1.67;
+            color: #333333;
+            font-weight: bold;
+        }
+        form {
+            margin-top: 22px;
+            text-align: right;
+            label {
+                font-weight: bold;
+                font-size: 1.8rem;
+                color: #333333;
+                margin-right: 16px;
+                vertical-align: middle;
+            }
+            input:not([type="submit"]) {
+                width: 520px;
+                height: 45px;
+                margin-bottom: 15px;
+                background-color: rgba(255, 255, 255, .7);
+                border: none;
+            }
+            input[type="submit"] {
+                display: inline-block;
+                margin: 0 auto;
+                width: 200px;
+                height: 60px;
+                background-color: #C63205;
+                color: #ffffff;
+                font-size: 1.4rem;
+                font-weight: bold;
+                border: none;
+            }
+        }
+        &__textarea {
+            float: right;
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            textarea {
+                width: 520px;
+                background-color: rgba(255, 255, 255, .7);
+                border: none;
+            }
+        }
+        &__submit {
+            text-align: center;
+        }
+    }
+}

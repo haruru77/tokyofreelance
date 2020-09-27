@@ -1,0 +1,144 @@
+                .p-story {
+                    height: 420px;
+                    position: relative;
+                    img.p-story__img {
+                        height: 100%;
+                        object-fit: cover;
+                        position: absolute;
+                        z-index: -10;
+                        width: 100%;
+                    }
+                    img.p-story__img2 {
+                        height: 100%;
+                        object-fit: cover;
+                        position: absolute;
+                        z-index: -1;
+                        width: 100%;
+                        opacity: .1;
+                    }
+                    h2 {
+                        text-align: center;
+                        padding-top: 30px;
+                        font-size: 4.3rem;
+                        color: #ffffff;
+                        font-family: 'Hind', sans-serif;
+                    }
+                    &__box {
+                        display: flex;
+                        justify-content: space-between;
+                        &__left {
+                            display: none;
+                            @include break($pc) {
+                                display: block;
+                            }
+                        }
+                        &__content {
+                            width: 100%;
+                            @include break($pc) {
+                                width: 40%;
+                            }
+                            &__txt {
+                                height: 245px;
+                                overflow: hidden;
+                                p {
+                                    color: #ffffff;
+                                    font-size: 1.2rem;
+                                }
+                            }
+                            &__button {
+                                padding-top: 8px;
+                                text-align: center;
+                                @include break($pc) {
+                                    text-align: right;
+                                }
+                            }
+                        }
+                    }
+                    &__single {
+                        &__top {
+                            height: 420px;
+                            position: relative;
+                            img.p-story__single__top__img {
+                                height: 600px;
+                                object-fit: cover;
+                                position: absolute;
+                                z-index: -1;
+                                width: 100%;
+                                top: -180px;
+                            }
+                            img.p-story__single__top__img2 {
+                                height: 600px;
+                                object-fit: cover;
+                                position: absolute;
+                                z-index: 1;
+                                width: 100%;
+                                opacity: .1;
+                                top: -180px;
+                            }
+                            h2 {
+                                text-align: center;
+                                padding-top: 60px;
+                                font-size: 4.3rem;
+                                color: #ffffff;
+                                font-family: 'Hind', sans-serif;
+                            }
+                        }
+                        &__box {
+                            padding-top: 54px;
+                            display: flex;
+                            justify-content: space-between;
+                            &__lead {
+                                width: 48%;
+                                text-align: center;
+                                line-height: 213px;
+                                color: #ffffff;
+                                h3 {
+                                    font-size: 2.6rem;
+                                }
+                            }
+                            &__content {
+                                width: 48%;
+                                &__txt {
+                                    height: 213px;
+                                    overflow: hidden;
+                                    p {
+                                        color: #ffffff;
+                                        font-size: 1.2rem;
+                                    }
+                                }
+                            }
+                        }
+                        &__sub {
+                            background-color: rgba(0, 0, 0, 1);
+                            z-index: -5;
+                            position: relative;
+                            img.p-story__single__sub__img {
+                                height: 325px;
+                                position: absolute;
+                                object-fit: cover;
+                                z-index: -1;
+                                width: 100%;
+                            }
+                            &__box {
+                                height: 325px;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                &__content {
+                                    width: 48%;
+                                    &__txt {
+                                        height: 205px;
+                                        overflow: hidden;
+                                        p {
+                                            color: #ffffff;
+                                            font-size: 1.2rem;
+                                        }
+                                    }
+                                    &:nth-of-type(odd) {
+                                        color: royalblue;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }

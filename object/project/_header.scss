@@ -1,0 +1,36 @@
+            .p-header-menu {
+                margin: 15px 0;
+                @include break($pc) {
+                    margin: 25px 0;
+                }
+                &__menus {
+                    display: flex;
+                    justify-content: space-between;
+                    text-align: center;
+                    li {
+                        margin-right: 3px;
+                        @include break($pc) {
+                            margin-right: 30px;
+                        }
+                        p {
+                            font-size: 1.1rem;
+                            font-weight: bold;
+                            color: #421F15;
+                            @include break($pc) {
+                                font-size: 1.2rem;
+                            }
+                        }
+                        h2 {
+                            display: none;
+                            font-size: 2.2rem;
+                            color: #421F15;
+                            @include break($pc) {
+                                display: block;
+                            }
+                        }
+                        li:last-of-type {
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }

@@ -1,0 +1,14 @@
+    .u-kv-container {
+        margin: 0 4vw;
+        @include break($pc) {
+            margin: 0 15vw;
+        }
+    }
+    
+    .u-main-container {
+        margin: 0 4vw;
+        @include break($pc) {
+            max-width: 810px;
+            margin: 0 auto;
+        }
+    }

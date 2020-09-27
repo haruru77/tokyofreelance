@@ -1,0 +1,90 @@
+.p-comments {
+    h2 {
+        text-align: center;
+        padding-top: 60px;
+        font-size: 4.3rem;
+        color: #301F1B;
+        font-family: 'Hind', sans-serif;
+    }
+    p {
+        padding-top: 30px;
+        text-align: center;
+        font-size: 1.8rem;
+        color: #301F1B;
+        font-weight: bold;
+        @include break($pc) {
+            font-size: 2.4rem;
+        }
+    }
+    &__museum {
+        margin-top: 33px;
+        position: relative;
+        @include break($pc) {
+            height: 215px;
+        }
+        img {
+            width: 100%;
+            @include break($pc) {
+                position: absolute;
+                z-index: -1;
+            }
+        }
+        &__content {
+            background-color: #000000;
+            padding: 0 4vw;
+            @include break($pc) {
+                padding: 0;
+                height: 215px;
+                margin-top: 33px;
+                background-color: inherit;
+            }
+            h3 {
+                padding-top: 20px;
+                font-size: 2.0rem;
+                color: #ffffff;
+                @include break($pc) {
+                    padding-top: 44px;
+                    padding-left: 30px;
+                }
+                span {
+                    font-size: 2.4rem;
+                }
+            }
+            p {
+                text-align: left;
+                padding-top: 15px;
+                font-weight: normal;
+                font-size: 1.4rem;
+                color: #ffffff;
+                line-height: 1.57;
+                @include break($pc) {
+                    width: 420px;
+                    padding-left: 30px;
+                }
+            }
+            &__sp {
+                @include break($pc) {
+                    display: none;
+                }
+            }
+        }
+    }
+    &__button {
+        text-align: center;
+        margin-top: 30px;
+        padding-bottom: 30px;
+        @include break($pc) {
+            margin-top: 0;
+            padding-bottom: 0;
+            position: absolute;
+            right: 14.5px;
+            bottom: 14.5px;
+        }
+    }
+    &__contents {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+    }
+}

@@ -1,0 +1,54 @@
+.p-schedule {
+    padding-top: 30px;
+    &__box {
+        background-color: rgba(255, 255, 255, .29);
+        padding-left: 30px;
+        padding-right: 30px;
+        @include break($pc) {
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+        h2 {
+            text-align: center;
+            padding-top: 30px;
+            font-size: 4.3rem;
+            color: #301F1B;
+            font-family: 'Hind', sans-serif;
+        }
+        &__table {
+            margin: 0 auto;
+            font-size: 2.0rem;
+            font-weight: bold;
+            color: #301F1B;
+            padding-bottom: 60px;
+            text-align: center;
+            ul {
+                list-style: none;
+                padding-left: 0;
+                display: flex;
+                flex-wrap: wrap;
+                @include break($pc) {
+                    justify-content: space-between;
+                }
+                li {
+                    padding-right: 30px;
+                    a {
+                        text-decoration: underline;
+                        color: #301F1B;
+                    }
+                }
+                li:first-of-type {
+                    padding-right: 15px;
+                }
+                li:last-of-type {
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+    &__button {
+        padding-top: 30px;
+        padding-bottom: 60px;
+        text-align: center;
+    }
+}

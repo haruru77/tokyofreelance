@@ -1,0 +1,118 @@
+.c-card {
+    &__news {
+        margin-bottom: 30px;
+        @include break($pc) {
+            margin-bottom: 0;
+            margin-right: 30px;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+        img {
+            width: 100%;
+        }
+        &__content {
+            background-color: #ffffff;
+            height: 120px;
+            padding: 15px;
+            time {
+                font-size: 1.2rem;
+                color: #666666;
+            }
+            p {
+                font-size: 1.6rem;
+                font-weight: bold;
+                color: #333333;
+            }
+        }
+    }
+    &__news2 {
+        margin-bottom: 30px;
+        @include break($pc) {
+            margin-bottom: 0;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+        @include break($pc) {
+            height: 88px;
+            display: flex;
+        }
+        img {
+            width: 100%;
+            @include break($pc) {
+                width: 156px;
+            }
+        }
+        &__content2 {
+            background-color: #ffffff;
+            padding: 15px;
+            @include break($pc) {
+                width: 234px;
+            }
+            time {
+                font-size: 1.2rem;
+                color: #666666;
+            }
+            p {
+                font-size: 1.6rem;
+                font-weight: bold;
+                color: #333333;
+            }
+        }
+    }
+    &__comments {
+        h3 {
+            font-size: 2.2rem;
+            color: #333333;
+            text-align: center;
+        }
+        p.c-card__comments__cat {
+            font-weight: normal;
+            padding-top: 10px;
+            font-size: 1.2rem;
+            color: #666666;
+        }
+        p.c-card__comments__txt {
+            font-weight: normal;
+            padding-top: 15px;
+            font-size: 1.6rem;
+            color: #333333;
+            line-height: 1.625;
+            text-align: left;
+        }
+    }
+    &__cast {
+        display: flex;
+        &__img {
+            width: 130px;
+            height: 130px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &__contents {
+            width: 250px;
+            height: 206px;
+            overflow: hidden;
+            p {
+                font-size: 1.6rem;
+                color: #1A1A1A;
+            }
+            h3 {
+                font-size: 2.2rem;
+                color: #1A1A1A;
+            }
+            p.c-card__cast__contents__ttl {
+                font-size: 1.2rem;
+                color: #1A1A1A;
+            }
+            p.card__cast__contents__content {
+                font-size: 1.2rem;
+                color: #1A1A1A;
+                line-height: 1.75;
+            }
+        }
+    }
+}

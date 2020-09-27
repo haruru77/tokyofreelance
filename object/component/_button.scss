@@ -1,0 +1,51 @@
+.c-button {
+    &__reserve {
+        display: inline-block;
+        width: 200px;
+        height: 60px;
+        background-color: #C63205;
+        color: #ffffff;
+        font-size: 1.4rem;
+        font-weight: bold;
+        text-align: center;
+        line-height: 60px;
+    }
+    &__more {
+        display: inline-block;
+        width: 120px;
+        height: 40px;
+        background-color: #C63205;
+        color: #ffffff;
+        font-size: 1.4rem;
+        font-weight: bold;
+        text-align: center;
+        line-height: 40px;
+    }
+    &__cast {
+        display: inline-block;
+        width: 120px;
+        height: 40px;
+        color: #C63205;
+        font-size: 1.4rem;
+        font-weight: bold;
+        text-align: center;
+        line-height: 30px;
+        border: 5px solid #C63205;
+    }
+    &__contact {
+        display: inline-block;
+        margin-bottom: 15px;
+        width: 200px;
+        height: 60px;
+        background-color: #603813;
+        color: #ffffff;
+        font-size: 1.4rem;
+        font-weight: bold;
+        text-align: center;
+        line-height: 60px;
+        @include break($pc) {
+            margin-right: 30px;
+            margin-bottom: 0;
+        }
+    }
+}
